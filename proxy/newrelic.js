@@ -1,4 +1,4 @@
-const {license_key} = require('../nrignore');
+const {license_key} = require('./nrignore');
 
 // var cmon = require('nrignore.js')
 /**
