@@ -6,7 +6,7 @@ const proxy = require('http-proxy-middleware')
 const compression = require('compression')
 const app = express();
 
-const port = 80
+const port = 8008
 
 // app.use(compression());
 // app.use(morgan('dev'));
