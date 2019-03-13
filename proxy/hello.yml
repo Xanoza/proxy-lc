@@ -1,0 +1,22 @@
+config:
+  target: 'http://localhost:8008'
+  phases:
+    - duration: 60
+      arrivalRate: 1000
+  http:
+    pool: 10
+  defaults:
+    headers:
+      x-my-service-auth: '987401838271002188298567'
+scenarios:
+  - flow:
+    - get:
+        url: "/100000"
+  # - flow:
+  #   - post:
+  #       url: '/overview/ratings'
+  #       json: 
+  #         res_id: "12312"
+  #         username: "larrychou"
+  #         ratings: 5
+  #         gender: "M"
