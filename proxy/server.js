@@ -21,10 +21,10 @@ app.use('/api/photos', proxy({
   target: 'http://ec2-52-15-166-74.us-east-2.compute.amazonaws.com/'
 }));
 app.use('/api/reserve', proxy({
-  target: 'http://ec2-18-223-125-61.us-east-2.compute.amazonaws.com/'
+  target: 'http://ec2-18-191-171-76.us-east-2.compute.amazonaws.com/'
 }));
 app.use('/menu', proxy({
-  target: 'http://ec2-54-86-231-192.compute-1.amazonaws.com/'
+  target: 'http://ec2-54-166-217-205.compute-1.amazonaws.com'
 }));
 // app.use('/overview', proxy({
 //   target: 'http://ec2-18-191-13-163.us-east-2.compute.amazonaws.com/'
