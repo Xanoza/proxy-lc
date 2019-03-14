@@ -6,8 +6,11 @@ const proxy = require('http-proxy-middleware')
 const compression = require('compression')
 const app = express();
 
-const port = 8008
-
+const port = 80
+app.get('/loaderio-68cde58e4824629a3fbe14c5c4e38a81', (req,res) => {
+  res.send('loaderio-68cde58e4824629a3fbe14c5c4e38a81')
+  
+})
 // app.use(compression());
 // app.use(morgan('dev'));
 app.use(express.static(path.join(__dirname, 'public')));
