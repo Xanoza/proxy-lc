@@ -15,13 +15,13 @@ app.get('/loaderio-68cde58e4824629a3fbe14c5c4e38a81', (req,res) => {
 // app.use(morgan('dev'));
 app.use(express.static(path.join(__dirname, 'public')));
 app.use('/overview', proxy({
-  target: 'http://ec2-54-183-204-115.us-west-1.compute.amazonaws.com/'
+  target: 'http://ec2-52-53-226-76.us-west-1.compute.amazonaws.com/'
 }));
 app.use('/api/photos', proxy({
   target: 'http://ec2-52-15-166-74.us-east-2.compute.amazonaws.com/'
 }));
 app.use('/api/reserve', proxy({
-  target: 'http://ec2-18-191-171-76.us-east-2.compute.amazonaws.com/'
+  target: 'http://ec2-18-217-214-176.us-east-2.compute.amazonaws.com/'
 }));
 app.use('/menu', proxy({
   target: 'http://ec2-54-166-217-205.compute-1.amazonaws.com'
