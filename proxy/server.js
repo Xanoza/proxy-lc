@@ -11,6 +11,11 @@ app.get('/loaderio-68cde58e4824629a3fbe14c5c4e38a81', (req,res) => {
   res.send('loaderio-68cde58e4824629a3fbe14c5c4e38a81')
   
 })
+
+app.get('/loaderio-adbd35723a84b8dd5a28a589c1d2d272', (req,res) => {
+  res.send('loaderio-adbd35723a84b8dd5a28a589c1d2d272')
+  
+})
 // app.use(compression());
 // app.use(morgan('dev'));
 app.use(express.static(path.join(__dirname, 'public')));
